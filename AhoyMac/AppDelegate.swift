@@ -17,6 +17,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Insert code here to initialize your application
         if let button = statusItem.button {
             button.image = NSImage(named: NSImage.Name("ahoy-logo"))
+            button.image?.size.width = 16
+            button.image?.size.height = 16
             button.action = #selector(printText(_:))
         }
     }
